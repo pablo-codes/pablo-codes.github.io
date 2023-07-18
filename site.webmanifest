@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": " A website about Francis Okpani",
+    "short_name": "Francis Okpani",
     "icons": [
         {
             "src": "%PUBLIC_URL%/android-chrome-192x192.png",

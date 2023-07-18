@@ -3,7 +3,7 @@ import Body from './body/Body'
 import Footer from './body/Footer'
 import Header from './body/Header'
 import '../../css/main.css'
-import '../../css/bootstrap.min.css'
+// import '../../css/bootstrap.min.css'
 import { Outlet } from 'react-router-dom'
 
 const Home = () => {

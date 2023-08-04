@@ -25,10 +25,9 @@ const Contact = () => {
                                             <i className="linecons linecons-phone"></i>
                                         </div>
                                         <div className="ci-text">
-                                            <h4>415-832-2000</h4>
+                                            <h4>+234 90 3654 3366</h4>
                                             <p>
-                                                Duis erat leo, aliquam laoreet fringilla quis,
-                                                pretium vitae dui.
+                                                A Nigerian Line
                                             </p>
                                         </div>
                                     </div>
@@ -38,10 +37,9 @@ const Contact = () => {
                                             <i className="linecons linecons-location"></i>
                                         </div>
                                         <div className="ci-text">
-                                            <h4>San Francisco</h4>
+                                            <h4>No 22b oke-onastr, surulere, Lagos</h4>
                                             <p>
-                                                Duis erat leo, aliquam laoreet fringilla quis,
-                                                pretium vitae dui.
+                                                My Location.
                                             </p>
                                         </div>
                                     </div>
@@ -53,8 +51,7 @@ const Contact = () => {
                                         <div className="ci-text">
                                             <h4>hello@example.com</h4>
                                             <p>
-                                                Duis erat leo, aliquam laoreet fringilla quis,
-                                                pretium vitae dui.
+                                                To be implemented.
                                             </p>
                                         </div>
                                     </div>
@@ -69,7 +66,7 @@ const Contact = () => {
                                 <form
                                     id="contact_form"
                                     className="contact-form"
-                                    action="https://lmpixels.com/demo/leven-html-new/full-width-light/contact_form/contact_form.php"
+                                    action=""
                                     method="post"
                                     novalidate="true"
                                 >

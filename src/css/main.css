@@ -451,7 +451,7 @@ body > footer .copyrights {
   display: block;
   margin-bottom: 12px;
   text-align: center;
-  font-size: 12px;
+  font-size: 25px;
   color: #9e9e9e;
 }
 .alignleft {
@@ -4159,7 +4159,7 @@ a.post-thumbnail:hover {
   color: #333;
   text-decoration: none;
   line-height: 21px;
-  font-size: 13px;
+  font-size: 25px;
   opacity: 0.6;
 }
 .site-footer .footer-social-links li a:hover {
@@ -4170,7 +4170,7 @@ a.post-thumbnail:hover {
 }
 .footer-copyrights p {
   line-height: 21px;
-  font-size: 13px;
+  font-size: 20px;
   margin: 0;
 }
 .nothing-found {

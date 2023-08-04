@@ -1,20 +1,20 @@
 import React from 'react'
-
+import { BsGithub, BsLinkedin, BsDiscord } from 'react-icons/bs'
 const Footer = () => {
     return (
         <footer className="site-footer clearfix">
             <div className="footer-social">
                 <ul className="footer-social-links">
                     <li>
-                        <a href="https://lmpixels.com/demo/leven-html-new/full-width-light/index.html#" target="_blank">Twitter</a>
+                        <a href="https://github.com/pablo-codes" target="_blank"><BsGithub /></a>
                     </li>
 
                     <li>
-                        <a href="https://lmpixels.com/demo/leven-html-new/full-width-light/index.html#" target="_blank">Facebook</a>
+                        <a href="https://www.linkedin.com/in/francis-okpani" target="_blank"><BsLinkedin /></a>
                     </li>
 
                     <li>
-                        <a href="https://lmpixels.com/demo/leven-html-new/full-width-light/index.html#" target="_blank">Instagram</a>
+                        <a href="https://discord.com/users/pablo-codes" target="_blank"><BsDiscord /></a>
                     </li>
                 </ul>
             </div>

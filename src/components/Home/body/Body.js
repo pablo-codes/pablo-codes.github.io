@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-
+import img from '../../images/pablo-codes.png'
 const Body = () => {
 
     function downloadImage(url, name) {
@@ -74,8 +74,8 @@ const Body = () => {
 
                                         <div className="col-sm-12 col-md-5 col-lg-5">
                                             <div className="home-photo">
-                                                {/* <div className="hp-inner" style="background-image: url(&quot;./img/main_photo.jpg&quot;); background-position: calc(50% + -2.88319px) calc(50% + 6.05079px);">
-                                                        </div> */}
+                                                <div className="hp-inner" style={{ backgroundImage: `url(${img})`, backgroundPosition: "calc(50% + -2.88319px) calc(50% + 6.05079px)" }}>
+                                                </div>
                                             </div>
                                         </div>
 

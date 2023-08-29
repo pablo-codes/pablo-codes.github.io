@@ -10,7 +10,7 @@ html {
 body {
   position: initial;
   font-family: poppins, Helvetica, sans-serif;
-  font-size: 1.2rem;
+  font-size: 16px;
   font-weight: 400;
   margin: 0;
   width: 100%;
@@ -139,14 +139,14 @@ h6 {
 body,
 p {
   font-family: poppins, Helvetica, sans-serif;
-  font-size: 1.2rem;
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
   line-height: 1.75em;
   color: #666;
 }
 p {
-  font-size: 1.2rem;
+  font-size: 14px;
   color: #666;
   margin: 0 0 10px;
 }
@@ -4245,7 +4245,7 @@ a.post-thumbnail:hover {
     min-width: 100%;
     min-height: 100%;
     width: 100%;
-    padding: 52px 40px 60px;
+    padding: 52px 20px 60px;
   }
   .page-title {
     padding: 30px 40px;

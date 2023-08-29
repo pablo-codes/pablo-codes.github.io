@@ -1,5 +1,9 @@
-import React, { useEffect, useRef } from 'react'
-import img from '../../images/pablo-codes.png'
+import React, { useEffect, useRef, useState } from 'react'
+import { HiOutlineComputerDesktop } from 'react-icons/hi2';
+import { TbTextResize } from 'react-icons/tb'
+import { SiSolidity } from 'react-icons/si'
+import { BsGlobe } from 'react-icons/bs'
+import Card from './Card';
 const Body = () => {
 
     function downloadImage(url, name) {
@@ -10,14 +14,29 @@ const Body = () => {
         link.click();
         document.body.removeChild(link);
     }
+    const [currentCard, setCurrentCard] = useState(0);
 
     const handleDownload = () => {
-        const imageUrl = 'https://res.cloudinary.com/dyevylpk8/image/upload/v1688570985/OKPANI_FRANCIS_CV_poxotc.pdf'; // Replace with your image URL
+        const imageUrl =
+            'https://res.cloudinary.com/dyevylpk8/image/upload/v1688570985/OKPANI_FRANCIS_CV_poxotc.pdf'; // Replace with your image URL
         const imageName = 'OKPANI_FRANCIS_CV.pdf'; // Replace with your desired image name
         downloadImage(imageUrl, imageName);
     };
     const headingRef = useRef(null);
 
+
+    const handleClick = () => {
+        setCurrentCard((prevCard) => (prevCard + 1) % 4);
+    };
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentCard((prevCard) => (prevCard + 1) % 4);
+        }, 2000);
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, []);
     useEffect(() => {
         const texts = ['Web Designer', 'Smart Contract Developer', 'Web Developer'];
         let textIndex = 0;
@@ -49,19 +68,7 @@ const Body = () => {
         type();
     }, []);
 
-    // return (
-    //     <button onClick={handleDownload}>Download Image</button>
-    // );
-
-
-
-
     return (
-
-
-
-
-
         <div id="main" className="site-main">
             <div id="main-content" className="single-page-content">
                 <div id="primary" className="content-area">
@@ -72,14 +79,14 @@ const Body = () => {
                                 <div className="home-content">
                                     <div className="row flex-v-align">
 
-                                        <div className="col-sm-12 col-md-5 col-lg-5">
+                                        <div className="col-sm-12 col-lg-5">
                                             <div className="home-photo">
-                                                <div className="hp-inner" style={{ backgroundImage: `url(${img})`, backgroundPosition: "calc(50% + -2.88319px) calc(50% + 6.05079px)" }}>
+                                                <div className="hp-inner" style={{ backgroundImage: `url(${require("../../images/pablo-codes.png")})`, backgroundPosition: "calc(50% + -2.88319px) calc(50% + 6.05079px)" }}>
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div className="col-sm-12 col-md-7 col-lg-7">
+                                        <div className="col-sm-12 col-lg-7">
                                             <div className="home-text hp-left">
                                                 <div className="owl-carousel text-rotation owl-loaded owl-drag">
 
@@ -87,10 +94,8 @@ const Body = () => {
 
 
                                                     <h2 style={{ color: '#007ced' }} ref={headingRef}></h2>
-
-
-                                                    <h1>Francis Okpani</h1>
-                                                    <p>Hello, I'm Francis Okpani, a passionate MERN stack web developer and smart contracts developer. With a strong background in web development and a keen interest in blockchain technology, I specialize in creating dynamic and innovative digital solutions</p>
+                                                    <h1 className='text'>Francis Okpani</h1>
+                                                    <p className='text'>Hello, I'm Francis Okpani, a passionate MERN stack web developer and smart contracts developer. With a strong background in web development and a keen interest in blockchain technology, I specialize in creating dynamic and innovative digital solutions</p>
 
                                                     <div className="home-buttons">
                                                         <button className="btn btn-primary" onClick={handleDownload}>Download CV</button>
@@ -114,84 +119,17 @@ const Body = () => {
                                         <p>
                                             As a skilled MERN stack web developer and smart contracts developer, I offer a range of services to help businesses and individuals achieve their digital goals.
                                         </p>
-                                        {/* 
-                                        Consulting and Technical Guidance:
-
-                                        Provide expert advice and guidance on web development and smart contracts.
-                                        Assess project requirements and recommend optimal technology solutions.
-                                        Offer insights on industry trends, best practices, and emerging technologies.
-                                        Support you throughout the development lifecycle, from ideation to deployment. */}
                                     </div>
                                 </div>
                             </div>
 
                             <div className="row">
-                                <div className="col-xs-12 col-sm-6">
-                                    <div className="info-list-w-icon">
-                                        <div className="info-block-w-icon">
-                                            <div className="ci-icon">
-                                                <i className="linecons linecons-pen"></i>
-                                            </div>
 
-                                            <div className="ci-text">
-                                                <h4>Web Development</h4>
-                                                <p>
-                                                    Build dynamic and responsive web applications using the MERN stack.
-                                                    Develop custom features and functionalities to meet your specific requirements.
-                                                    Ensure clean and efficient code that follows best practices and industry standards.
-                                                    Optimize websites for performance, scalability, and user experience.
-                                                </p>
-                                            </div>
-                                        </div>
+                                <Card />
 
-                                        <div className="info-block-w-icon">
-                                            <div className="ci-icon">
-                                                <i className="linecons linecons-display"></i>
-                                            </div>
 
-                                            <div className="ci-text">
-                                                <h4>User Interface (UI) Design</h4>
-                                                <p>Create visually stunning and intuitive user interfaces.
-                                                    Design cohesive and engaging user experiences that align with your brand identity.
-                                                    Develop wireframes and prototypes to bring your ideas to life.
-                                                    Implement modern design trends and best practices to enhance usability and accessibility.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
-                                <div className="col-xs-12 col-sm-6">
-                                    <div className="info-list-w-icon">
 
-                                        <div className="info-block-w-icon">
-                                            <div className="ci-icon">
-                                                <i className="linecons linecons-shop"></i>
-                                            </div>
-
-                                            <div className="ci-text">
-                                                <h4>Smart Contracts Development</h4>
-                                                <p>
-                                                    Design and develop secure and efficient smart contracts on blockchain platforms.
-                                                    Utilize Solidity and other relevant languages to create custom contract solutions.
-                                                    Implement business logic and rules within smart contracts for decentralized applications.
-                                                    Conduct rigorous testing and security audits to ensure contract reliability.</p>
-                                            </div>
-                                        </div>
-
-                                        <div className="info-block-w-icon">
-                                            <div className="ci-icon">
-                                                <i className="linecons linecons-megaphone"></i>
-                                            </div>
-
-                                            <div className="ci-text">
-                                                <h4>API Development and Integration</h4>
-                                                <p>Design and develop robust APIs to facilitate seamless data exchange between applications.
-                                                    Integrate third-party APIs and services to enhance functionality and expand capabilities.
-                                                    Implement authentication and authorization mechanisms to ensure data security.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                             {/* <!-- /Services --> */}
 

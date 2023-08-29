@@ -8,6 +8,7 @@ const Header = () => {
     const [about, SetAbout] = useState('0.55')
     const [contact, SetContact] = useState('0.55')
     useEffect(() => {
+
         const url = path.pathname
         if (url == "/contact") {
             SetAbout("0.55")

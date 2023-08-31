@@ -44,12 +44,12 @@ const Body = () => {
         let isDeleting = false;
 
         const type = () => {
-            const currentText = texts[textIndex];
+            const currentText = texts[textIndex] + "|";
             if (isDeleting) {
-                headingRef.current.textContent = currentText.substring(0, charIndex - 1);
+                headingRef.current.textContent = currentText.substring(0, charIndex - 1) + "|";
                 charIndex--;
             } else {
-                headingRef.current.textContent = currentText.substring(0, charIndex + 1);
+                headingRef.current.textContent = currentText.substring(0, charIndex + 1) + "|";
                 charIndex++;
             }
 

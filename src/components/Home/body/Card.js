@@ -5,14 +5,13 @@ import { HiOutlineComputerDesktop } from 'react-icons/hi2';
 import { TbTextResize } from 'react-icons/tb'
 import { SiSolidity } from 'react-icons/si'
 import { BsGlobe } from 'react-icons/bs'
-import { RxDot } from 'react-icons/rx'
+import { RxDot, RxDotFilled } from 'react-icons/rx'
 
 const Card = () => {
     const [currentCard, setCurrentCard] = useState(0);
+    const [onDisplay, setDisplay] = useState(0)
+    const [intervalId, setIntervalId] = useState(null)
 
-    const handleClick = () => {
-        setCurrentCard((prevCard) => (prevCard + 1) % cards.length);
-    };
 
 
     const cards = [
@@ -61,41 +60,73 @@ const Card = () => {
         },
     ];
 
+    const restartInterval = () => {
+        clearInterval(intervalId); // Clear the existing interval
+        const newIntervalId = setInterval(() => {
+            setCurrentCard((prevCard) => (prevCard + 1) % cards.length);
+            setDisplay((prevDis) => (prevDis + 1) % cards.length);
+        }, 4000);
+        setIntervalId(newIntervalId); // Set the new interval ID
+    };
 
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentCard((prevCard) => (prevCard + 1) % cards.length);
-        }, 4000);
+            setDisplay((prevDis) => (prevDis + 1) % cards.length)
 
+        }, 4000);
+        setIntervalId(interval)
         return () => {
             clearInterval(interval);
         };
     }, []);
-    const renderButtons =
+    const renderButtons = () => {
+        return cards.map((_, index) => (
+            < div key={index} style={{ display: "inline" }} >
+                {onDisplay === index ? (
+                    <RxDotFilled
+                        style={{ color: 'blue', height: '2rem', width: '2rem' }}
+                    />
+                ) : (
+                    <RxDot
+                        onClick={() => {
+                            setDisplay(index);
+                            setCurrentCard(index);
+                            setIntervalId()
 
-        <>
-
-            <RxDot style={{ color: "blue", height: "2rem", width: "2rem" }} />
-            <RxDot style={{ color: "blue", height: "1.5rem", width: "1.5rem" }} />
-            <RxDot style={{ color: "blue", height: "1.5rem", width: "1.5rem" }} />
-            <RxDot style={{ color: "blue", height: "1.5rem", width: "1.5rem" }} />
-        </>
-
+                        }}
+                        style={{ color: 'blue', height: '1.5rem', width: '1.5rem', display: "inline" }}
+                    />
+                )}
+            </div>
+        ))
+    }
 
     const renderCards = () => {
         return cards.map((card, index) => {
+
             const cardStyles = {
-                display: currentCard === index ? 'block' : 'none',
+                display: currentCard === index ? 'flex' : "none",
+                // height: currentCard === index ? 'auto' : 0,
+                visibility: currentCard === index ? 'visible' : 'hidden',
+                opacity: currentCard === index ? 1 : 0,
+                transition: 'opacity 0.5s ease-in-out, height 0.5s ease-in-out',
+                overflow: 'hidden'
             };
             let icon = null;
+            const marg = document.querySelector(".block-title h2")
 
             if (card.title === 'Web Development') {
+                // marg.style.setProperty('--marginsit', "25%")
                 icon = <HiOutlineComputerDesktop />;
             } else if (card.title === 'UI/UX Design') {
+                //marg.style.setProperty('--marginsit', "50%")
                 icon = <TbTextResize />
             } else if (card.title === 'Smart Contracts Development') {
+                //marg.style.setProperty('--marginsit', "75%")
                 icon = <SiSolidity />
             } else {
+                //marg.style.setProperty('--marginsit', "100%")
                 icon = <BsGlobe />
             }
 
@@ -117,11 +148,13 @@ const Card = () => {
     }
 
     return (
-        <div className="info-list-w-icon">
+        <div className="info-list-w-icon" style={{ alignContent: "center" }} >
 
             {renderCards()}
-            {renderButtons}
-            <button onClick={handleClick}>Next Card</button>
+            <div style={{ textAlign: "center" }}>
+                {renderButtons()}
+            </div>
+
         </div>
     );
 };

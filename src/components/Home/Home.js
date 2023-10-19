@@ -8,7 +8,7 @@ import { Outlet } from 'react-router-dom'
 
 const Home = () => {
     return (
-        <div>
+        <div style={{ hyphens: "none", wordWrap: "break-word" }}>
             <div className="lm-animated-bg" style={{ backgroundPosition: "calc(50% + -2.88319px) calc(50% + 6.05079px)" }}></div>
             <div className="page-scroll">
                 <div id="page_container" className="page-container bg-move-effect animated transition-flip-in-right" data-animation="transition-flip-in-right">

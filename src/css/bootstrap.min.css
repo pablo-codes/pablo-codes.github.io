@@ -234,7 +234,7 @@ select {
   text-transform: none;
 }
 select {
-  word-wrap: normal;
+  word-wrap: break-word;
 }
 [type="button"],
 [type="reset"],

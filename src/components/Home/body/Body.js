@@ -1,9 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { HiOutlineComputerDesktop } from 'react-icons/hi2';
-import { TbTextResize } from 'react-icons/tb'
-import { SiSolidity } from 'react-icons/si'
-import { BsGlobe } from 'react-icons/bs'
 import Card from './Card';
+
 const Body = () => {
 
     function downloadImage(url, name) {
@@ -18,7 +15,7 @@ const Body = () => {
 
     const handleDownload = () => {
         const imageUrl =
-            'https://res.cloudinary.com/dyevylpk8/image/upload/v1688570985/OKPANI_FRANCIS_CV_poxotc.pdf'; // Replace with your image URL
+            'https://res.cloudinary.com/dyevylpk8/image/upload/v1697720742/Okpani_Francis%20CV.pdf'; // Replace with your image URL
         const imageName = 'OKPANI_FRANCIS_CV.pdf'; // Replace with your desired image name
         downloadImage(imageUrl, imageName);
     };
@@ -38,35 +35,40 @@ const Body = () => {
         };
     }, []);
     useEffect(() => {
-        const texts = ['Web Designer', 'Smart Contract Developer', 'Web Developer'];
+        const texts = ['Web Designer', 'SC Developer', 'Web Developer'];
         let textIndex = 0;
         let charIndex = 0;
         let isDeleting = false;
 
         const type = () => {
-            const currentText = texts[textIndex] + "|";
-            if (isDeleting) {
-                headingRef.current.textContent = currentText.substring(0, charIndex - 1) + "|";
-                charIndex--;
-            } else {
-                headingRef.current.textContent = currentText.substring(0, charIndex + 1) + "|";
-                charIndex++;
+            let currentText = texts[textIndex];
+
+            if (!isDeleting) {
+                currentText = currentText.substring(0, charIndex + 1) + "|";
             }
 
-            if (!isDeleting && charIndex === currentText.length) {
+            headingRef.current.textContent = currentText;
+
+            if (!isDeleting && charIndex === currentText.length - 1) {
                 isDeleting = true;
                 setTimeout(type, 1000); // Delay before starting the deletion
             } else if (isDeleting && charIndex === 0) {
                 isDeleting = false;
                 textIndex = (textIndex + 1) % texts.length;
                 setTimeout(type, 200); // Delay before typing the next text
+            } else if (isDeleting) {
+                charIndex--;
+                setTimeout(type, 100); // Deleting speed (adjust as needed)
             } else {
+                charIndex++;
                 setTimeout(type, 100); // Typing speed (adjust as needed)
             }
         };
 
         type();
     }, []);
+
+
 
     return (
         <div id="main" className="site-main">
@@ -93,12 +95,14 @@ const Body = () => {
 
 
 
-                                                    <h2 style={{ color: '#007ced' }} ref={headingRef}></h2>
+                                                    <h2 style={{ color: '#007ced', textDecoration: 'underline', textAlign: 'center' }} ref={headingRef}></h2>
                                                     <h1 className='text'>Francis Okpani</h1>
                                                     <p className='text'>Hello, I'm Francis Okpani, a passionate MERN stack web developer and smart contracts developer. With a strong background in web development and a keen interest in blockchain technology, I specialize in creating dynamic and innovative digital solutions</p>
 
                                                     <div className="home-buttons">
-                                                        <button className="btn btn-primary" onClick={handleDownload}>Download CV</button>
+                                                        <button className="btn btn-primary" onChange={(e) => {
+
+                                                        }} onClick={handleDownload}>Download CV</button>
                                                         <a href="https://wa.me/2349036543366" target="_self" className="btn btn-secondary">Contact</a>
                                                     </div>
                                                 </div>

@@ -23,6 +23,8 @@ body {
   background-attachment: fixed;
   overflow-y: auto;
   overflow-x: hidden;
+  hyphens: none !important;
+  word-wrap: break-word !important;
 }
 .lm-animated-bg {
   position: absolute;
@@ -144,6 +146,8 @@ p {
   font-style: normal;
   line-height: 1.75em;
   color: #666;
+  hyphens: none;
+  word-wrap: break-word;
 }
 p {
   font-size: 17px;
@@ -3249,10 +3253,6 @@ a.post-thumbnail:hover {
   margin-right: 2px;
 }
 .comment-content {
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
   word-wrap: break-word;
   margin-top: 5px;
   font-size: 1em;

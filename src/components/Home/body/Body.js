@@ -229,7 +229,7 @@ const Body = () => {
                                 <div className="lm-info-block gray-default">
                                     <i className="linecons linecons-clock"></i>
                                     <h4>Working Hours</h4>
-                                    <span className="lm-info-block-value">16</span>
+                                    <span className="lm-info-block-value">420</span>
                                     <span className="lm-info-block-text"></span>
                                 </div>
                             </div>
@@ -238,7 +238,7 @@ const Body = () => {
                                 <div className="lm-info-block gray-default">
                                     <i className="linecons linecons-star"></i>
                                     <h4>Awards Won</h4>
-                                    <span className="lm-info-block-value">1</span>
+                                    <span className="lm-info-block-value">pending</span>
                                     <span className="lm-info-block-text"></span>
                                 </div>
                             </div>

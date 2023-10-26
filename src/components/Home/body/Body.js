@@ -97,7 +97,7 @@ const Body = () => {
 
                                                     <h2 style={{ color: '#007ced', textDecoration: 'underline', textAlign: 'center' }} ref={headingRef}></h2>
                                                     <h1 className='text'>Francis Okpani</h1>
-                                                    <p className='text'>Hello, I'm Francis Okpani, a passionate MERN stack web developer and smart contracts developer. With a strong background in web development and a keen interest in blockchain technology, I specialize in creating dynamic and innovative digital solutions</p>
+                                                    <p className='text'>Hello, I'm Francis Okpani, a passionate MERN stack web developer and smart contracts developer. With a strong background in web development and a keen interest in blockchain technology, I specialize in creating dynamic and innovative digital solutions.</p>
 
                                                     <div className="home-buttons">
                                                         <button className="btn btn-primary" onChange={(e) => {
@@ -220,7 +220,7 @@ const Body = () => {
                                     <i className="linecons linecons-heart"></i>
                                     <h4>Happy Clients</h4>
 
-                                    <span className="lm-info-block-value">578</span>
+                                    <span className="lm-info-block-value">2</span>
                                     <span className="lm-info-block-text"></span>
                                 </div>
                             </div>
@@ -229,7 +229,7 @@ const Body = () => {
                                 <div className="lm-info-block gray-default">
                                     <i className="linecons linecons-clock"></i>
                                     <h4>Working Hours</h4>
-                                    <span className="lm-info-block-value">4,780</span>
+                                    <span className="lm-info-block-value">16</span>
                                     <span className="lm-info-block-text"></span>
                                 </div>
                             </div>
@@ -238,7 +238,7 @@ const Body = () => {
                                 <div className="lm-info-block gray-default">
                                     <i className="linecons linecons-star"></i>
                                     <h4>Awards Won</h4>
-                                    <span className="lm-info-block-value">15</span>
+                                    <span className="lm-info-block-value">1</span>
                                     <span className="lm-info-block-text"></span>
                                 </div>
                             </div>
@@ -246,8 +246,8 @@ const Body = () => {
                             <div className="col-xs-12 col-sm-3 ">
                                 <div className="lm-info-block gray-default">
                                     <i className="linecons linecons-cup"></i>
-                                    <h4>Coffee Consumed</h4>
-                                    <span className="lm-info-block-value">1,286</span>
+                                    <h4>Tea Consumed</h4>
+                                    <span className="lm-info-block-value">100</span>
                                     <span className="lm-info-block-text"></span>
                                 </div>
                             </div>
@@ -273,64 +273,52 @@ const Body = () => {
                                     <div className="fw-package-wrap col-md-4 ">
                                         <div className="fw-package">
                                             <div className="fw-heading-row">
-                                                <span>Silver</span>
+                                                <span>Bronze</span>
                                             </div>
 
                                             <div className="fw-pricing-row">
                                                 <span>$64</span>
                                                 <small>per month</small>
                                             </div>
-
-
-
-                                            <div className="fw-default-row">Lorem ipsum dolor</div>
-                                            <div className="fw-default-row">Pellentesque scelerisque</div>
-                                            <div className="fw-default-row">Morbi eu sagittis</div>
+                                            <div className="fw-default-row">Website design and development.</div>
+                                            <div className="fw-default-row">Front-end development.</div>
+                                            <div className="fw-default-row">Website development (simple).</div>
                                         </div>
                                     </div>
 
                                     <div className="fw-package-wrap col-md-4 highlight-col ">
                                         <div className="fw-package">
                                             <div className="fw-heading-row">
-                                                <span>Gold</span>
+                                                <span>Silver</span>
                                             </div>
 
-                                            <div className="fw-pricing-row">
+                                            <div className="fw-pricing-row" >
                                                 <span>$128</span>
                                                 <small>per month</small>
                                             </div>
-
-
-
-                                            <div className="fw-default-row">Lorem ipsum dolor</div>
-                                            <div className="fw-default-row">Pellentesque scelerisque</div>
-                                            <div className="fw-default-row">Morbi eu sagittis</div>
-                                            <div className="fw-default-row">Donec non diam</div>
-                                            <div className="fw-default-row">
-                                            </div>
+                                            <div className="fw-default-row">Complex web apps with MERN stack.</div>
+                                            <div className="fw-default-row">Scalable, secure web apps.</div>
+                                            <div className="fw-default-row"> Website maintenance and updates.</div>
+                                            <div className="fw-default-row">Web apps optimized for performance and SEO.</div>
                                         </div>
                                     </div>
 
-                                    <div className="fw-package-wrap col-md-4 default-col ">
+                                    <div className="fw-package-wrap col-md-4 default-col " style={{ cursor: "not-allowed" }}>
                                         <div className="fw-package">
                                             <div className="fw-heading-row">
-                                                <span>Platinum</span>
+                                                <span>Gold</span>
                                             </div>
 
                                             <div className="fw-pricing-row">
                                                 <span>$256</span>
                                                 <small>per month</small>
                                             </div>
-
-                                            <div className="fw-button-row">
-
-                                            </div>
-
-                                            <div className="fw-default-row">Lorem ipsum dolor</div>
-                                            <div className="fw-default-row">Pellentesque scelerisque</div>
-                                            <div className="fw-default-row">Morbi eu sagittis</div>
-                                            <div className="fw-default-row">Donec non diam</div>
-                                            <div className="fw-default-row">Aenean nec libero</div>
+                                            <div className="fw-default-row">Custom MERN stack solutions.</div>
+                                            <div className="fw-default-row">Lead MERN stack teams.</div>
+                                            <div className="fw-default-row">MERN stack architecture consulting.</div>
+                                            <div className="fw-default-row">MERN stack performance optimization.</div>
+                                            <div className="fw-default-row">MERN stack security audits.</div>
+                                            <del>Not Possible for now </del>
                                         </div>
                                     </div>
                                 </div>

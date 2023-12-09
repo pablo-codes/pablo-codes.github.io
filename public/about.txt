@@ -1,6 +1,0 @@
-This favicon was generated using the following font:
-
-- Font Title: Cherry Bomb One
-- Font Author: Copyright 2019 The Cherry Bomb Project Authors (https://github.com/satsuyako/CherryBomb)
-- Font Source: http://fonts.gstatic.com/s/cherrybombone/v8/y83DW4od1h6KlV3c6JJhRhGOdhrKDNpF41fr-w.ttf
-- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

@@ -1,0 +1,6 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+Allow:/auth
+Allow:/invoiceapp
+Allow:/*

@@ -1,0 +1,79 @@
+
+
+## 📄 Francis Okpani's Resume Content
+
+**Francis Okpani**
+**Software Developer**
+
+### Contact, Websites & Projects
+* LinkedIn: francis-okpani
+* Phone: +234 903 654 3366
+* Email: francisokpani570@gmail.com
+* Portfolio: [https://pablo-codes.github.io](https://pablo-codes.github.io)
+* GitHub: [https://github.com/pablo-codes](https://github.com/pablo-codes)
+
+### Summary
+Highly skilled **Full Stack Web Developer** with **3+ years of experience** in **MERN stack** technologies. Proficient in **JavaScript, Node.js, React, MongoDB, and REST APIs**. Seeking a challenging role to leverage my expertise and drive team success.
+
+### Education & Qualifications
+* DIPLOMA IN FULL STACK WEB DEVELOPMENT
+* DIPLOMA IN WEB DEVELOPMENT FUNDAMENTALS
+* CYBER SECURITY CERTIFICATION
+
+### Skills & Tools
+* **Web Technologies**: HTML5, CSS3, JavaScript (ES6+), TypeScript, JQuery
+* **Frontend**: ReactJS, Flutter Mobile Development, Android Studio, Native Android Development
+* **Backend & Runtime**: NodeJS, ExpressJS, PHP, Laravel, Python (Flask, Django), Java
+* **Databases**: MongoDB, MySQL, PostgreSQL, Redis, PHPMyAdmin
+* **ORMs/Libraries**: Mongoose, Sequelize, GraphQl
+* **DevOps & Cloud**: Git, Github, Github CI/CD, Docker, Google Cloud, Firebase, Linux
+* **Other/Specialized**: OpenAi Api, Twilio, Sendgrid, Solidity, Rust (Command Line, IOT), COBOL (Zlos IBM Mainframes), FileZilla, XAMPP, WordPress
+
+---
+
+## 💼 Experience
+
+### Full Stack Developer (Full-time, On-Site)
+**Punch Group, Nigeria** | SEP 2025 - Present
+* Developed a full-stack enterprise autodialer platform utilizing **Node.js, TypeScript, and Express**, anchored by a robust **GraphQL** architecture with **Apollo Server**.
+* Integrated **Twilio and Vonage APIs** for real-time voice communications, SMS, and AI-driven call automation.
+* Engineered a lead management system featuring **WebSocket-based** agent assignment, automated call queuing, IVR navigation with DTMF support, and dynamic routing.
+* Incorporated **OpenAI's GPT models** for real-time conversation assistance and automated content generation.
+* Built a scalable backend using **MongoDB/Mongoose** for data persistence, **Redis** and **BullMQ** for asynchronous job processing, and **AWS S3/Cloudinary** for secure media storage.
+* Designed comprehensive **RESTful and GraphQL APIs** supporting over 34 resolvers to handle campaigns, logs, scheduling, and real-time reporting.
+
+### MERN Stack Developer (Contract, Remote)
+**PERZSI LLC, USA** | APR 2025 - JUL 2025
+* **Led a team of 3 developers** in designing and developing a new internal product, accelerating project delivery and code quality.
+* Set up **GitHub CI/CD pipelines** and server configuration for seamless testing and automated deployment.
+* Developed **RESTful APIs** with proper versioning and security best practices.
+* Translated design mockups directly from **Figma** to production UI, eliminating additional design cycles.
+
+### Web Developer (Contract, On-site)
+**GN128 Solutions, Nigeria** | MAY 2025 - JUN 2025
+* Contributed to **3 active web projects**, enhancing UI/UX, performance, and developer efficiency.
+* Implemented **PHP backends** for 2 client-facing projects, supporting robust business logic and database interactions.
+* Set up **CI/CD pipelines** for all assigned projects.
+
+### Fullstack PHP Developer
+**PERZSI LLC, USA** | MAR 2024 - JAN 2025
+* Successfully migrated the company's website backend from **Node.js to Laravel**, reducing server response time by 40%.
+* Created **5 new SQL tables** to support dashboard functionality, reducing data retrieval time by **30%**.
+* Integrated **3 payment platforms**, increasing payment processing speed by **25%**.
+
+### Backend Developer
+**CALCULATE ALL, USA** | APR 2023 - DEC 2023
+* Built an **OCR API** utilizing **Tesseract and pdfjs-dist**, enabling users to extract text from 500+ file formats with **95%+ accuracy** and **30% reduction** in manual data entry time.
+* Designed a scalable image management system using **Cloudinary's Node.js SDK**, leading to a **40% decrease** in image storage costs and **3x increase** in image querying speed.
+* Developed a **MongoDB** database, achieving **99.9% uptime** and **25% reduction** in data storage costs.
+
+### Accountant and Clerk
+**JUMIA** | JAN 2023 - MAR 2024
+* Streamlined financial operations, achieving **99.5% on-time payment rate** and **100% accuracy** in payment processing.
+* Expanded role as Hub Representative, coordinating daily operations for **20+ staff members** and achieving **5% increase** in hub efficiency.
+
+### FullStack Web Development Intern
+**GIGSHARE** | 2022 - 2023
+* Developed and maintained **RESTful APIs**, ensuring **99.5% API uptime** and **30% reduction** in API response time.
+* Improved database performance by leveraging **Mongoose's indexing and aggregation** features, resulting in **40% decrease** in database query time.
+
